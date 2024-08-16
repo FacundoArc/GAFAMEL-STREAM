@@ -29,7 +29,7 @@ def main():
 
             #DATAFRAME LIMPIO
             completo = st.checkbox('Mostrar Cuadro completo. En las secciones inferiores se encuentran los datos filtrados segun el tipo de servicio.')
-            df_limpio = df.drop(['id_producto'], axis=1)
+            #df_limpio = df.drop(['id_producto'], axis=1)
             if completo:
                 st.dataframe(df)
                 st.dataframe(df_limpio)
